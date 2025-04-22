@@ -21,7 +21,7 @@
 import {
   createAppKit,
 } from '@reown/appkit/vue'
-import {wagmiAdapter , networks, projectId } from './config/index'
+import {wagmiAdapter , networks, projectId, metadata } from './config/index'
 
 import ActionButtonList from "./components/ActionButton.vue"; 
 import InfoList from "./components/InfoList.vue";
@@ -36,12 +36,7 @@ const appkit = createAppKit({
     connectMethodsOrder: ['email', 'social', 'wallet'],
     analytics: true, // Optional - defaults to your Cloud configuration
   },
-  metadata: {
-    name: 'AppKit Vue Example',
-    description: 'AppKit Vue Example',
-    url: 'https://reown.com/appkit',
-    icons: ['https://avatars.githubusercontent.com/u/179229932?s=200&v=4']
-  },
+  metadata: metadata,
   themeVariables: {
     '--w3m-accent': '#000000',
   }
