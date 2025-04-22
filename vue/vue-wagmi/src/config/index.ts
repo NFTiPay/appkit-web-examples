@@ -20,7 +20,7 @@ export const metadata = {
 // Set up connectors
 const connectors = []
 // Uncomment walletconnect to see the double initialization warning
-// When commented, no warning. But, every refresh will require you to click connect wallet again
+// When commented, no warning. But, every refresh will require you to click connect wallet again if using wallet connect
 connectors.push(walletConnect({ projectId, metadata, showQrModal: false }))
 // Uncomment metamask to see the occasional metamask showing up twice error, one without the icon
 connectors.push(metaMask({
