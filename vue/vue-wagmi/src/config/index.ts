@@ -39,7 +39,7 @@ connectors.push(
 )
 
 export const wagmiAdapter = new WagmiAdapter({
-  connectors,
+  // connectors,
   networks,
   projectId
 })
